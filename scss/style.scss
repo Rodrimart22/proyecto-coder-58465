@@ -25,22 +25,27 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    div{
-        a{
-            img{
+    div {
+        a {
+            img {
                 width: 50px;
             }
         }
     }
 
-    nav{
-        ul{
+    nav {
+        ul {
             display: flex;
             list-style: none;
             justify-content: flex-end;
-            align-content: flex-end; 
-            li{
-                margin-inline: 20px; 
+            align-content: flex-end;
+
+            li {
+                margin-inline: 20px;
+                transition: width 0.5s;
+                &:hover{
+                    font-size: 105%;
+                }
             }
         }
     }
@@ -51,7 +56,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Titulos */
@@ -68,10 +74,9 @@ h1 {
 .imagenesPrincipales {
     display: flex;
     justify-content: center;
-
     img {
         margin-bottom: 30px;
-        max-width: 85%;
+    max-width: 90%;
     }
 }
 
@@ -84,6 +89,7 @@ h1 {
     grid-template-columns: 3.5fr 0.8fr;
     grid-template-rows: 100px 50% 50%;
     margin-bottom: 85px;
+
     .titulo1 {
         grid-area: titulo1;
         justify-self: center;
@@ -108,11 +114,13 @@ h1 {
     .show {
         grid-area: show;
         background-color: rgb(125, 197, 90);
+
         h4 {
             margin-bottom: 5px;
         }
     }
 }
+
 /* links */
 a {
     text-decoration: none;
@@ -138,36 +146,53 @@ a {
         align-items: center;
         margin: 30px;
         flex-wrap: wrap;
+
         p {
             display: flex;
             max-width: 65%;
         }
+
         img {
             width: 450px;
         }
     }
+
     .par {
         display: flex;
         flex-direction: row-reverse;
     }
 }
+
+/* Biografia */
+
+.bio{
+    margin: 50px;
+}
+
 /* Discos */
 .discos {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px;
+    margin: 30px;
 
     img {
         width: 300px;
-        margin: 20px;
+        margin-bottom: 10px;
+        transition: width 0.5s;
+        &:hover{
+            width: 320px;
+        }
     }
+
     p {
         text-align: center;
         font-weight: bolder;
+        margin-bottom: 30px;
     }
 }
+
 /* Pagina de contacto */
 #formularioDeContacto {
     display: flex;
@@ -182,11 +207,17 @@ label {
 button {
     border-color: navajowhite;
     font-weight: bold;
-    &:hover{
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: background-color 0.2s, font-weight 0.2s;
+
+    &:hover {
         background-color: rgb(188, 164, 129);
         font-weight: bolder;
     }
 }
+
 /* footer */
 footer {
     display: grid;
@@ -194,66 +225,81 @@ footer {
     grid-template-areas: "enlaces rrss copyright";
     justify-items: center;
     align-items: center;
-    margin-top: auto;
+    margin-top: 50px;
+
     .enlaces {
         grid-area: enlaces;
     }
+
     .rrss {
         grid-area: rrss;
     }
+
     .copyright {
         grid-area: copyright;
     }
 
-    div{
+    div {
         h4 {
             margin-bottom: 15px;
             text-align: center;
         }
+
         img {
             width: 50px;
         }
+
         ul {
             list-style: circle;
             justify-content: center;
+
             li {
                 margin: 15px;
             }
-         }
+        }
     }
 }
+
 /*Tablet*/
 @media screen and (max-width: 1024px) {
     #gridContainer {
         display: flex;
         flex-direction: column;
+
         .titulo1 {
             display: flex;
             justify-content: center;
             margin-bottom: 15px;
         }
+
         .titulo2 {
             display: flex;
+            justify-content: center;
         }
+
         .video1 {
             display: flex;
             justify-content: center;
             margin-bottom: 40px;
         }
+
         .video2 {
             display: flex;
             justify-content: center;
             margin-bottom: 30px;
         }
+
         .show {
             display: flex;
             flex-direction: column;
-            align-content: center;
+            align-items: center;
         }
     }
+
     .boton {
         width: 120px;
     }
+
     footer {
         margin-top: auto;
         font-size: 85%;
@@ -264,16 +310,19 @@ footer {
 
 @media screen and (max-width: 480px) {
     h1 {
-    font-size: 2.5rem;
+        font-size: 2.5rem;
     }
 
-    #gridContainer{ .video1 {
-        margin: 10px;
+    #gridContainer {
+        .video1 {
+            margin: 10px;
+        }
+
+        .video2 {
+            margin: 10px;
+        }
     }
-    .video2 {
-        margin: 10px;
-    }
-    }
+
     nav {
         width: 50%;
     }
@@ -283,11 +332,12 @@ footer {
         font-size: 50%;
     }
 
-    footer{
+    footer {
         font-size: 8px;
         margin-top: auto;
-        div{
-            img{
+
+        div {
+            img {
                 width: 45px;
             }
         }

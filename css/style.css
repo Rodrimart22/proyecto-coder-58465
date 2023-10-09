@@ -36,6 +36,10 @@ header nav ul {
 }
 header nav ul li {
   margin-inline: 20px;
+  transition: width 0.5s;
+}
+header nav ul li:hover {
+  font-size: 105%;
 }
 
 /*Body*/
@@ -43,7 +47,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Titulos */
@@ -62,7 +67,7 @@ h1 {
 }
 .imagenesPrincipales img {
   margin-bottom: 30px;
-  max-width: 85%;
+  max-width: 90%;
 }
 
 /*Grid Index*/
@@ -135,21 +140,31 @@ a {
   flex-direction: row-reverse;
 }
 
+/* Biografia */
+.bio {
+  margin: 50px;
+}
+
 /* Discos */
 .discos {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 20px;
+  margin: 30px;
 }
 .discos img {
   width: 300px;
-  margin: 20px;
+  margin-bottom: 10px;
+  transition: width 0.5s;
+}
+.discos img:hover {
+  width: 320px;
 }
 .discos p {
   text-align: center;
   font-weight: bolder;
+  margin-bottom: 30px;
 }
 
 /* Pagina de contacto */
@@ -166,6 +181,10 @@ label {
 button {
   border-color: navajowhite;
   font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: background-color 0.2s, font-weight 0.2s;
 }
 button:hover {
   background-color: rgb(188, 164, 129);
@@ -179,7 +198,7 @@ footer {
   grid-template-areas: "enlaces rrss copyright";
   justify-items: center;
   align-items: center;
-  margin-top: auto;
+  margin-top: 50px;
 }
 footer .enlaces {
   grid-area: enlaces;
@@ -218,6 +237,7 @@ footer div ul li {
   }
   #gridContainer .titulo2 {
     display: flex;
+    justify-content: center;
   }
   #gridContainer .video1 {
     display: flex;
@@ -232,7 +252,7 @@ footer div ul li {
   #gridContainer .show {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
   }
   .boton {
     width: 120px;

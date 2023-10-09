@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo Lo que necesitas sabes sobre la banda El Cuarteto de Nos lo encontras acá!">
+    <meta name="keywords" content="cuarteto, cuarteto de nos, roberto musso, santiago tavella, santiago marrero, gustavo antuña, alvaro pintos, lamina once, jueves, apocalipsis zombie, habla tu espejo, porfiado, bipolar, raro, cortamambo, revista esta, el tren bala, barranca abajo, otra navidad en las trincheras, canciones del corazon, emilio garcia, soy una arveja, alberto wolf y el cuarteto de nos, show, rock, bandas uruguayas">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;400;800&display=swap" rel="stylesheet">
-    <title>Preentrega3-Martinez</title>
+    <title>Cuarteto de Nos- La mejor banda de rock uruguaya!</title>
 </head>
 
 <body>
@@ -25,39 +28,39 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="./pages/integrantes.html"> Integrantes </a> </li>
-                <li><a href="./pages/biografia.html"> Biografia </a> </li>
+                <li><a href="./pages/biografia.html"> Biografía </a> </li>
                 <li><a href="./pages/discografia.html">Discografía</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <!-- Contenido Principal-->
-    <main>
-        <h1>El Cuarteto de Nos</h1>
+    <main data-aos="zoom-in">
+        <h1 data-aos="zoom-in">Cuarteto de Nos</h1>
         <div class="imagenesPrincipales">
             <img src="./img/foto-home.jpg" alt="Foto de los miembros de la banda">
         </div>
         <div id="gridContainer">
             <div class="titulo1">
-                <h2>¡Últimos Lanzamientos!</h2>
+                <h2 data-aos="fade-up">¡Últimos Lanzamientos!</h2>
             </div>
-            <div class="video1">
+            <div data-aos="fade-up" class="video1">
                 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/PIass-1rgkI?si=1Hmdr5U1Fb6xUUHX"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
-            <div class="video2">
+            <div data-aos="fade-up" class="video2">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/rHI0GbKT51U?si=AVoEM5Iya7SuAldB"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
-            <div class="titulo2">
+            <div data-aos="fade-left" class="titulo2">
                 <h2>¡Próximo Show!</h2>
             </div>
-            <div class="show">
+            <div data-aos="fade-left" class="show">
                 
                 <h4>Fecha</h4>
                 <p>31 de Octubre de 2023</p>
@@ -93,7 +96,10 @@
             <p>Copyright © 2023 El Cuarteto de Nos</p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

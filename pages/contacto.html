@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;400;800&display=swap" rel="stylesheet">
-    <title>Preentrega3-Martinez</title>
+    <title>Cuarteto de Nos- Contacto</title>
 </head>
 
 <body>
@@ -24,15 +25,15 @@
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./integrantes.html"> Integrantes </a> </li>
-                <li><a href="./biografia.html"> Biografia </a> </li>
+                <li><a href="./biografia.html"> Biografía </a> </li>
                 <li><a href="./discografia.html">Discografía</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <!-- Contenido Principal-->
-    <h1>Contactanos</h1>
-    <main id="formularioDeContacto">
+    <h1 data-aos="zoom-in">Contactanos</h1>
+    <main data-aos="zoom-in" id="formularioDeContacto">
         <div>
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre">
@@ -76,6 +77,10 @@
             <p>Copyright © 2023 El Cuarteto de Nos</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
