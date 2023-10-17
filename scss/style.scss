@@ -8,7 +8,7 @@
 /* Estilos globales */
 header {
     background-color: rgb(196, 138, 138);
-}
+   }
 
 body {
     background-color: lightblue;
@@ -25,6 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
+
     div {
         a {
             img {
@@ -37,14 +38,11 @@ header {
         ul {
             display: flex;
             list-style: none;
-            justify-content: flex-end;
-            align-content: flex-end;
-
             li {
                 margin-inline: 20px;
-                transition: width 0.5s;
-                &:hover{
-                    font-size: 105%;
+
+                & :hover {
+                    color: rgb(72, 72, 72);
                 }
             }
         }
@@ -67,6 +65,16 @@ h1 {
     font-size: 3em;
     font-weight: bolder;
     margin: 30px;
+    color: black;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+}
+
+h4 {
+    color: black;
 }
 
 /* imagenes */
@@ -74,9 +82,10 @@ h1 {
 .imagenesPrincipales {
     display: flex;
     justify-content: center;
+
     img {
         margin-bottom: 30px;
-    max-width: 90%;
+        max-width: 90%;
     }
 }
 
@@ -114,6 +123,7 @@ h1 {
     .show {
         grid-area: show;
         background-color: rgb(125, 197, 90);
+        margin-bottom: 20px;
 
         h4 {
             margin-bottom: 5px;
@@ -165,7 +175,7 @@ a {
 
 /* Biografia */
 
-.bio{
+.bio {
     margin: 50px;
 }
 
@@ -181,7 +191,8 @@ a {
         width: 300px;
         margin-bottom: 10px;
         transition: width 0.5s;
-        &:hover{
+
+        &:hover {
             width: 320px;
         }
     }
@@ -225,7 +236,7 @@ footer {
     grid-template-areas: "enlaces rrss copyright";
     justify-items: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: auto;
 
     .enlaces {
         grid-area: enlaces;
@@ -261,10 +272,11 @@ footer {
 }
 
 /*Tablet*/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
     #gridContainer {
         display: flex;
         flex-direction: column;
+        overflow-x: hidden;
 
         .titulo1 {
             display: flex;
@@ -280,13 +292,13 @@ footer {
         .video1 {
             display: flex;
             justify-content: center;
-            margin-bottom: 40px;
+            margin: 0px 20px 40px;
         }
 
         .video2 {
             display: flex;
             justify-content: center;
-            margin-bottom: 30px;
+            margin: 0px 20px 30px;
         }
 
         .show {
@@ -295,7 +307,15 @@ footer {
             align-items: center;
         }
     }
-
+header{
+    nav{
+        .navbarNav{
+            #navbar-nav{
+                align-items: center;
+            }
+        }
+    }
+}
     .boton {
         width: 120px;
     }
@@ -308,29 +328,50 @@ footer {
 
 /*Mobile*/
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body{
+    overflow-x: hidden;
+}
+
     h1 {
         font-size: 2.5rem;
     }
 
     #gridContainer {
+        display: flex;
+        flex-direction: column;
+
+        .titulo1 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+
+        }
+
+        .titulo2 {
+            display: flex;
+            justify-content: center;
+        }
+
         .video1 {
-            margin: 10px;
+            display: flex;
+            justify-content: center;
+            margin: 0px 20px 40px;
         }
 
         .video2 {
-            margin: 10px;
+            display: flex;
+            justify-content: center;
+            margin: 0px 20px 30px;
+        }
+
+        .show {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
-    nav {
-        width: 50%;
-    }
-
-    header nav ul li {
-        margin-inline: 15px;
-        font-size: 50%;
-    }
 
     footer {
         font-size: 8px;
