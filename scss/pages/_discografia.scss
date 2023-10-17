@@ -1,0 +1,24 @@
+/* Discografia */
+.discos {
+    @include flex(space-around);
+    list-style: none;
+    flex-wrap: wrap;
+
+    margin: 30px;
+
+    img {
+        width: 300px;
+        margin-bottom: 10px;
+        transition: width 0.5s;
+
+        &:hover {
+            width: 320px;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 30px;
+    }
+}

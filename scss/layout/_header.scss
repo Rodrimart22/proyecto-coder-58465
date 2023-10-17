@@ -1,0 +1,26 @@
+/* header */
+header {
+    @include flex(space-between);
+    align-items: center;
+     div {
+        a {
+            img {
+                width: 50px;
+            }
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                margin-inline: 20px;
+
+                & :hover {
+                    color: rgb(72, 72, 72);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/* Pagina de contacto */
+#formularioDeContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bolder;
+}
+
+button {
+    border-color: navajowhite;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: background-color 0.2s, font-weight 0.2s;
+
+    &:hover {
+        background-color: rgb(188, 164, 129);
+        font-weight: bolder;
+    }
+}

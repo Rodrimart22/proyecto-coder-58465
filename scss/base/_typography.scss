@@ -1,0 +1,15 @@
+/* Titulos */
+h1 {
+    @include flex(center);
+    font-size: 3em;
+    font-weight: bolder;
+    margin: 30px;
+    color: $colorletra;
+}
+h2 {
+    color: $colorletra;
+    font-weight: bold;
+}
+h4 {
+    color: $colorletra;
+}

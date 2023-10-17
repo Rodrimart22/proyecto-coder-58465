@@ -1,0 +1,8 @@
+/* imagenes */
+.imagenesPrincipales {
+    @include flex(center);
+    img {
+        margin-bottom: 30px;
+        max-width: 90%;
+    }
+}

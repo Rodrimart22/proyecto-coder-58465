@@ -1,0 +1,30 @@
+/*Integrantes*/
+.integrantes {
+    @include flex(space-around, column);
+    margin-bottom: 10px;
+
+    h4 {
+        @include flex(center);
+    }
+
+    section {
+        @include flex(space-around);
+        align-items: center;
+        margin: 30px;
+        flex-wrap: wrap;
+
+        p {
+            display: flex;
+            max-width: 65%;
+        }
+
+        img {
+            width: 450px;
+        }
+    }
+
+    .par {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

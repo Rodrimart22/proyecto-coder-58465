@@ -1,0 +1,5 @@
+@mixin flex($alinear, $direccion:row) {
+    display: flex;
+    justify-content: $alinear;
+    flex-direction: $direccion
+}

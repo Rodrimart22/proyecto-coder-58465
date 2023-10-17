@@ -1,0 +1,42 @@
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "enlaces rrss copyright";
+    justify-items: center;
+    align-items: center;
+    margin-top: auto;
+
+    .enlaces {
+        grid-area: enlaces;
+    }
+
+    .rrss {
+        grid-area: rrss;
+    }
+
+    .copyright {
+        grid-area: copyright;
+    }
+
+    div {
+        h4 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        img {
+            width: 50px;
+        }
+
+        ul {
+            list-style: circle;
+            justify-content: center;
+
+            li {
+                margin: 15px;
+            }
+        }
+    }
+}
+
