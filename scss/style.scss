@@ -293,12 +293,14 @@ footer {
             display: flex;
             justify-content: center;
             margin: 0px 20px 40px;
+            width: 75%;
         }
 
         .video2 {
             display: flex;
             justify-content: center;
             margin: 0px 20px 30px;
+            width: 75%;
         }
 
         .show {
@@ -307,15 +309,7 @@ footer {
             align-items: center;
         }
     }
-header{
-    nav{
-        .navbarNav{
-            #navbar-nav{
-                align-items: center;
-            }
-        }
-    }
-}
+
     .boton {
         width: 120px;
     }
@@ -329,10 +323,6 @@ header{
 /*Mobile*/
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    body{
-    overflow-x: hidden;
-}
-
     h1 {
         font-size: 2.5rem;
     }

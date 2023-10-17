@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo Lo que necesitas sabes sobre la banda El Cuarteto de Nos lo encontras acá!">
+    <meta name="keywords" content="cuarteto, cuarteto de nos, roberto musso, santiago tavella, santiago marrero, gustavo antuña, alvaro pintos, lamina once, jueves, apocalipsis zombie, habla tu espejo, porfiado, bipolar, raro, cortamambo, revista esta, el tren bala, barranca abajo, otra navidad en las trincheras, canciones del corazon, emilio garcia, soy una arveja, alberto wolf y el cuarteto de nos, show, rock, bandas uruguayas">
     <link rel="icon" href="../img/icono-cuarteto-de-nos.ico" type="ico" sizes="16px">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,15 +25,30 @@
             </a>
         </div>
         <!-- Navbar -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./integrantes.html"> Integrantes </a> </li>
-                <li><a href="./biografia.html"> Biografía </a> </li>
-                <li><a href="./discografia.html">Discografía</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./integrantes.html"> Integrantes </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./biografia.html"> Biografía </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./discografia.html">Discografía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
     </header>
     <!-- Contenido Principal-->
     <h1 data-aos="zoom-in">Discografía</h1>
@@ -119,9 +137,9 @@
         </div>
         <div class="rrss">
             <h4>Síguenos</h4>
-            <a href="#"><img src="../img/twitter.svg" alt="Logo de Twitter"></a>
-            <a href="#"><img src="../img/facebook.svg" alt="Logo de Facebook"></a>
-            <a href="#"><img src="../img/instagram.svg" alt="Logo de instagram"></a>
+            <a href="https://twitter.com/cuartetodenos?lang=es" target="_blank"><img src="./img/twitter.svg" alt="Logo de Twitter"></a>
+            <a href="https://www.facebook.com/people/Cuarteto-de-Nos/100044328944720/" target="_blank"><img src="./img/facebook.svg" alt="Logo de Facebook"></a>
+            <a href="https://www.instagram.com/cuartetodenosok/?hl=es" target="_blank"><img src="./img/instagram.svg" alt="Logo de instagram"></a>
         </div>
         <div class="copyright">
             <p>Copyright © 2023 El Cuarteto de Nos</p>
@@ -131,6 +149,7 @@
     <script>
         AOS.init();
       </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

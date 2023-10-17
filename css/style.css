@@ -252,18 +252,17 @@ footer div ul li {
     display: flex;
     justify-content: center;
     margin: 0px 20px 40px;
+    width: 75%;
   }
   #gridContainer .video2 {
     display: flex;
     justify-content: center;
     margin: 0px 20px 30px;
+    width: 75%;
   }
   #gridContainer .show {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  header nav .navbarNav #navbar-nav {
     align-items: center;
   }
   .boton {
@@ -276,9 +275,6 @@ footer div ul li {
 }
 /*Mobile*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  body {
-    overflow-x: hidden;
-  }
   h1 {
     font-size: 2.5rem;
   }
